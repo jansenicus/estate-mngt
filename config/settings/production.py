@@ -1,5 +1,4 @@
 from os import getenv, path
-from pathlib import Path
 
 from dotenv import load_dotenv
 
