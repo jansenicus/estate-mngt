@@ -37,5 +37,5 @@ mailpit-volume:
 estate-db:
 	docker compose -f local.yml exec postgres psql --username=alphaogilo --dbname=estate
 		
-
-		
+net:
+	docker network create estate_prod_nw 
