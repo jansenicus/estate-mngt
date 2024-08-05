@@ -23,7 +23,7 @@ COPY --from=node-build-stage /node_modules ./node_modules
 COPY . ${APP_HOME}
 
 RUN addgroup -g 1001 -S nodejs && \
-adduser -S nextjs -u 1001 -G nodejs
+    adduser -S nextjs -u 1001 -G nodejs
 
 RUN chown -R nextjs:nodejs ${APP_HOME}
 
