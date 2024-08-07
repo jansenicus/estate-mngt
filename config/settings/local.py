@@ -1,3 +1,6 @@
+"""
+config.settings.local
+"""
 from os import getenv, path
 
 from dotenv import load_dotenv
@@ -18,6 +21,8 @@ SECRET_KEY = getenv(
     "DJANGO_SECRET_KEY", 
     "GXmCVLxfOCDK3iU38klf7YNnu2Q3ViIz1ZMwcj0uPj_khQ3VqSo"
     )
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8080"]
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0"]
 
